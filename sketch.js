@@ -8,6 +8,8 @@ let ptFreq = 1;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
+  attachCanvasToContainer();
+  
   pendulums.push(new Pendulum(width/2, 0, 200, 40, null));
   for (let i = 0; i < PEND_COUNT; i++) {
     pendulums.push(new Pendulum(0, 0, 130, 10, chain ?  
